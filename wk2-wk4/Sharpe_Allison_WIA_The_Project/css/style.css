@@ -1,0 +1,22 @@
+#canvas1, #canvas2, #modCanvas{ /* canvas styling */
+    border: solid 1px #000;
+    background-color: #eee;
+    float: left;
+    clear: left;
+    margin: 0px 10px 10px 0px;
+}
+#canvas2 { /* canvas 7 styling */
+    margin-bottom: 80px;
+}
+h1 { /* h1 styling */
+    font-family: sans-serif;
+    font-weight: 300;
+    clear: left;
+}
+p { /* paragraph styling */
+    float: left;
+    clear: left;
+    font-size: 1.1em;
+    font-family: sans-serif;
+    font-weight: 100;
+}
