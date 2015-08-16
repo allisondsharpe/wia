@@ -2,15 +2,15 @@
 <html>
 <head>
     <title> Sharpe's Supplies </title>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <script src="js/main.js"></script>
-    <script src="includes/modernizr.js"></script>
+    <link rel="stylesheet" type="text/css" href="includes/css/style.css">
+    <script src="includes/js/modernizr.js"></script>
+    <script src="includes/js/jquery-1.9.1.min.js"></script>
 </head>
 
 <body>
-    <div id="container">
+    <div class="pg-container">
 
-        <h1> Sharpe's Supplies </h1>
+        <img src="includes/images/logo.png" alt="Logo of Sharpe's Supplies" id="logo-img" style="width:230px; height:150px;">
 
         <nav>
             <ul>
@@ -19,18 +19,39 @@
                 <li><a href="canvas.html"> The Drawing Board </a></li>
                 <li><a href="gallery.html"> The Gallery </a></li>
                 <li><a href="media.html"> Theatre Zone </a></li>
+                <li><a href="modernizr.html"> Modernizr </a></li>
             </ul>
         </nav>
 
-        <!-- Modernizer -->
-        <h1> Modernizr Test </h1>
-        <p> Checking Modernizr for success! </p>
-        <canvas id="exCanvas" width="500" height="300">Your browser does not support canvas.</canvas>
+        <section>
+            <!-- FadeTo Elements -->
+            <div id="fadeTo"></div>
+            <button id="fadeMe">Fade</button>
+        </section>
+
+        <section>
+            <!-- Animate Elements -->
+            <div id="theDiv">Animate Me</div>
+            <button id="right">Grow Right</button>
+            <button id="text">Big Text</button>
+            <button id="reset">Reset</button>
+        </section>
+
+        <section>
+            <!-- Show/Hide -->
+            <div id="show-hide"></div>
+            <button id="show">Show</button>
+            <button id="hide">Hide</button>
+            <button id="toggle">Toggle</button>
+        </section>
 
     </div>
 
-    
-    <script src="includes/jquery.1.7.1.min.js"></script>
-    <script src="includes/jquery.ui.1.8.18.js"></script>
+    <footer>
+        <p> Copyright &copy; <strong><a href="index.html"> Sharpe's Supplies </a></strong> 2015 </p>
+    </footer>
+
+    <script src="includes/js/main.js"></script>
+
 </body>
 </html>

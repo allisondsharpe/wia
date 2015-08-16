@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<title> JQuery Waypoints - Presentation </title>
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <link rel="stylesheet" href="css/mystyle.css" />
+        <link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/styles/dark.css">
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+
+        <style>
+            section {
+                width: 100%;
+            }
+            #image-one {
+                height: 280px;
+            }
+            #image-two {
+                height: 280px;
+                width: 400px;
+            }
+        </style>
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Slides -->
+			<div class="slides">
+				<section data-background="#eee" data-background-transition="slide">
+					<h2>What are JQuery Waypoints?</h2>
+                    <p> In summary, waypoints make it easier and more convenient for the user whenever they scroll through a webpage, which will enable the waypoint(s). </p>
+				</section>
+
+                <section data-background="#222" data-background-transition="slide">
+                   <h2> JQuery Waypoint(s) - What Are They Used For? </h2>
+                </section>
+
+                <section>
+                    <section>
+                        <p> 1) Waypoints can be used to help quickly guide a user to a certain point on a page. Take for example, those small "arrow" pop-up buttons that appear on a website at times when you're not at the top of the page are considered waypoints and will allow you to click on them to quickly guide yourself back to the top of the page. This can be used to guide you through many other points throughout the page as well. </p>
+                    </section>
+                    <section>
+                        <p> 2) Waypoints can also be used for animation purposes, ex: animate.css. </p>
+                    </section>
+                    <section>
+                        <p> 3) Lastly, waypoints can be used to make items on a webpage "pop out" to the user. This can be done for technical or decorative purposes. </p>
+                    </section>
+                </section>
+
+                <section data-background="#444" data-background-transition="slide">
+                    <h2>Examples of Waypoint(s)</h2>
+                    <a href="images/image-one.png"><img src="images/image-one.png" id="image-one"></a>
+                    <a href="images/image-two.png"><img src="images/image-two.png" id="image-two"></a>
+                    <p> These examples above are from the official webpage of the creator's of JQuery Waypoints. Here is the link to their website.   </p>
+                    <a href="http://imakewebthings.com/waypoints/guides/getting-started/">Go to Site</a>
+                </section>
+
+                <section data-background="#jjj" data-background-transition="slide">
+                    <h2>My Example</h2>
+                    <p> This example I created will help guide you in understanding how to execute Waypoints into your own code. </p>
+                    <a href="plugin-example/index.html">Click here to access website!</a>
+                </section>
+
+                <!--
+                
+                <section>
+                	<h2>Unordered list</h2>
+                    <ul>
+                    	<li>No order here</li>
+                        <li>2nd thing</li>
+                        <li>3rd Thing</li>
+                    </ul>
+
+                </section>
+                <section>
+                	<h2>Ordered list</h2>
+                    <ol>
+                    	<li>No order here</li>
+                        <li>2nd thing</li>
+                        <li>3rd Thing</li>
+                    </ol>
+
+                </section>
+                 <section>
+                	<h2>Transtitions</h2>
+
+                    	<p>
+                        	cube, default, page, concave, zoom, linear, fade, none
+
+                        </p>
+                        <a href="?transition=zoom#/4">Page</a>
+
+
+
+                </section>
+                 <section>
+                	<h2>Theme</h2>
+
+                    	<p>
+                        	Look in your CSS folder
+
+                        </p>
+                        <a href="?theme=sky#/5">Sky Theme</a>
+
+
+
+                </section>
+
+
+                 <section>
+                	<h2>Links</h2>
+                  	<h3>Internal Links</h3>
+                    <a href ="#/2">Jump to 3rd slide with a # 2</a>
+                    <br>
+                    <a href ="#/1/2">Jump to Vertical slide Down in the 3rd slide set</a>
+
+                        <br>
+                        <h3>External Links</h3>
+
+                    <a href="http://google.com" target="_blank"> Go to google</a>
+
+                </section>
+
+               <section>
+                	<section data-background="#007777">
+                    <h2>Backgrounds</h2>
+                    <p> Background color</p>
+
+                  	</section>
+
+                    <section data-background="images/modern.jpg">
+                    <h2>Backgrounds</h2>
+                    <p> Background image</p>
+
+                  	</section>
+                    <section data-background="images/modern.jpg" data-background-repeat="repeat" data-background-size="200px">
+                    <h2>Backgrounds</h2>
+                    <p> Background image</p>
+
+                  	</section>
+
+                       <section data-background="#4d7e65" data-background-transition="slide">
+                        <h2>Backgrounds</h2>
+                        <p> Background transitions</p>
+
+                  	</section>
+
+
+
+                </section>
+
+                <section>
+                		<h2> Fragments</h2>
+
+                        <ol>
+                        	<li class="fragment"> Some code go here</li>
+                            <li class="fragment"> Different code</li>
+                        	<li class="fragment"> More Code</li>
+                        </ol>
+
+                </section>
+
+             <section>
+                		<h2> Fragment Styles</h2>
+
+                        <ol>
+                        	<li class="fragment grow"> grow</li>
+                            <li class="fragment shrink"> Shrink</li>
+                        	<li class="fragment roll-in"> roll in</li>
+                            <li class="fragment fade-out"> fade out</li>
+                            <li class="fragment highlight-red"> Red</li>
+                            <li class="fragment highlight-blue">blue</li>
+
+
+                        </ol>
+
+                </section>
+
+                <section>
+                		<h2>Code View</h2>
+                        <pre><code>
+&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;
+&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;
+&lt;head&gt;
+&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=UTF-8&quot; /&gt;
+&lt;!-- TemplateBeginEditable name=&quot;doctitle&quot; --&gt;
+&lt;title&gt;Untitled Document&lt;/title&gt;
+&lt;!-- TemplateEndEditable --&gt;
+&lt;!-- TemplateBeginEditable name=&quot;head&quot; --&gt;
+&lt;!-- TemplateEndEditable --&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+
+                        </code>
+                        </pre>
+
+
+                </section>
+                -->
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme || 'solarized', // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'cube', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+					// { src: 'plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } }
+					// { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
