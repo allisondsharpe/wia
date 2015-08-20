@@ -1,0 +1,50 @@
+body {
+	height: 960px;
+	font-family: sans-serif;
+	background: #fff;
+	text-align: center;
+}
+
+#container {
+	background: #eee;
+	color: #333;
+	margin-left: 200px;
+	margin-right: 200px;
+	padding: 20px;
+	border: 1px solid #666;
+	border-radius: 0.5em;
+}
+
+h1 {
+	font-weight: 300;
+	margin-bottom: 100px;
+	text-decoration: underline;
+}
+
+h2 {
+	font-weight: 200;
+	margin-top: 80px;
+}
+
+p {
+	font-weight: 100;
+}
+
+section {
+	margin-bottom: 50px;
+}
+
+img {
+	border: 1px solid #333;
+}
+
+#border {
+	border-bottom: 1px solid #666;
+	margin-left: 200px;
+	margin-right: 200px;
+}
+
+.example-animation {
+	 animation-delay: 2s;
+}
+

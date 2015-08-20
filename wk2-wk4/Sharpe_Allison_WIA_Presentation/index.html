@@ -45,12 +45,13 @@
 
 			<!-- Slides -->
 			<div class="slides">
-				<section data-background="#eee" data-background-transition="slide">
+                
+				<section data-background-transition="slide">
 					<h2>What are JQuery Waypoints?</h2>
                     <p> In summary, waypoints make it easier and more convenient for the user whenever they scroll through a webpage, which will enable the waypoint(s). </p>
 				</section>
 
-                <section data-background="#222" data-background-transition="slide">
+                <section data-background-transition="slide">
                    <h2> JQuery Waypoint(s) - What Are They Used For? </h2>
                 </section>
 
@@ -59,167 +60,113 @@
                         <p> 1) Waypoints can be used to help quickly guide a user to a certain point on a page. Take for example, those small "arrow" pop-up buttons that appear on a website at times when you're not at the top of the page are considered waypoints and will allow you to click on them to quickly guide yourself back to the top of the page. This can be used to guide you through many other points throughout the page as well. </p>
                     </section>
                     <section>
-                        <p> 2) Waypoints can also be used for animation purposes, ex: animate.css. </p>
-                    </section>
-                    <section>
-                        <p> 3) Lastly, waypoints can be used to make items on a webpage "pop out" to the user. This can be done for technical or decorative purposes. </p>
+                        <p> 2) Waypoints can also be used for animation purposes, ex: animate.css. With waypoints, you will have the ability to trigger an element more than once and you'll be able to modify its offset as well as its callback. </p>
                     </section>
                 </section>
+                
+                <section data-background-transition="slide">
+					<h2>What are Offsets and Why Should You Use Them?</h2>
+                    <p> Offsets are "trigger points" that are set up at a particular area in the webpage. Offsets also start from the bottom of the page to the top. For example: if you were to set your offset to '20px', your waypoint will not activate until you were to scroll down to that desired point, but let's say you set your offset to '100px', this will activate the waypoint as soon as you refresh the page.  </p>
+				</section>
 
-                <section data-background="#444" data-background-transition="slide">
+                <section data-background-transition="slide">
                     <h2>Examples of Waypoint(s)</h2>
                     <a href="images/image-one.png"><img src="images/image-one.png" id="image-one"></a>
                     <a href="images/image-two.png"><img src="images/image-two.png" id="image-two"></a>
-                    <p> These examples above are from the official webpage of the creator's of JQuery Waypoints. Here is the link to their website.   </p>
+                    <p> These examples above are from imakewebthings.com. Here is the link to their website.   </p>
                     <a href="http://imakewebthings.com/waypoints/guides/getting-started/">Go to Site</a>
                 </section>
 
-                <section data-background="#jjj" data-background-transition="slide">
-                    <h2>My Example</h2>
-                    <p> This example I created will help guide you in understanding how to execute Waypoints into your own code. </p>
-                    <a href="plugin-example/index.html">Click here to access website!</a>
-                </section>
-
-                <!--
-                
                 <section>
-                	<h2>Unordered list</h2>
-                    <ul>
-                    	<li>No order here</li>
-                        <li>2nd thing</li>
-                        <li>3rd Thing</li>
-                    </ul>
-
-                </section>
-                <section>
-                	<h2>Ordered list</h2>
-                    <ol>
-                    	<li>No order here</li>
-                        <li>2nd thing</li>
-                        <li>3rd Thing</li>
-                    </ol>
-
-                </section>
-                 <section>
-                	<h2>Transtitions</h2>
-
-                    	<p>
-                        	cube, default, page, concave, zoom, linear, fade, none
-
-                        </p>
-                        <a href="?transition=zoom#/4">Page</a>
-
-
-
-                </section>
-                 <section>
-                	<h2>Theme</h2>
-
-                    	<p>
-                        	Look in your CSS folder
-
-                        </p>
-                        <a href="?theme=sky#/5">Sky Theme</a>
-
-
-
-                </section>
-
-
-                 <section>
-                	<h2>Links</h2>
-                  	<h3>Internal Links</h3>
-                    <a href ="#/2">Jump to 3rd slide with a # 2</a>
-                    <br>
-                    <a href ="#/1/2">Jump to Vertical slide Down in the 3rd slide set</a>
-
-                        <br>
-                        <h3>External Links</h3>
-
-                    <a href="http://google.com" target="_blank"> Go to google</a>
-
-                </section>
-
-               <section>
-                	<section data-background="#007777">
-                    <h2>Backgrounds</h2>
-                    <p> Background color</p>
-
-                  	</section>
-
-                    <section data-background="images/modern.jpg">
-                    <h2>Backgrounds</h2>
-                    <p> Background image</p>
-
-                  	</section>
-                    <section data-background="images/modern.jpg" data-background-repeat="repeat" data-background-size="200px">
-                    <h2>Backgrounds</h2>
-                    <p> Background image</p>
-
-                  	</section>
-
-                       <section data-background="#4d7e65" data-background-transition="slide">
-                        <h2>Backgrounds</h2>
-                        <p> Background transitions</p>
-
-                  	</section>
-
-
-
-                </section>
-
-                <section>
-                		<h2> Fragments</h2>
-
-                        <ol>
-                        	<li class="fragment"> Some code go here</li>
-                            <li class="fragment"> Different code</li>
-                        	<li class="fragment"> More Code</li>
-                        </ol>
-
-                </section>
-
-             <section>
-                		<h2> Fragment Styles</h2>
-
-                        <ol>
-                        	<li class="fragment grow"> grow</li>
-                            <li class="fragment shrink"> Shrink</li>
-                        	<li class="fragment roll-in"> roll in</li>
-                            <li class="fragment fade-out"> fade out</li>
-                            <li class="fragment highlight-red"> Red</li>
-                            <li class="fragment highlight-blue">blue</li>
-
-
-                        </ol>
-
-                </section>
-
-                <section>
-                		<h2>Code View</h2>
+                    <section>
+                        <h2>JQuery Waypoints - HTML Example #1</h2>
                         <pre><code>
 &lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;
 &lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;
 &lt;head&gt;
 &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=UTF-8&quot; /&gt;
-&lt;!-- TemplateBeginEditable name=&quot;doctitle&quot; --&gt;
-&lt;title&gt;Untitled Document&lt;/title&gt;
-&lt;!-- TemplateEndEditable --&gt;
-&lt;!-- TemplateBeginEditable name=&quot;head&quot; --&gt;
-&lt;!-- TemplateEndEditable --&gt;
+&lt;title&gt;JQuery Waypoints - Plugin Example(s)&lt;/title&gt;
+<!-- place animate.css on top -->
+&lt;link rel="stylesheet" href="css/animate.css"/&gt;
+<!-- jquery needs to be above waypoints in order for waypoints to work! -->
+&lt;script src="js/jquery-1.9.1.min.js"&gt;&lt;/script&gt;
+<!-- waypoints should be placed under both animate.css and jquery -->
+&lt;script src="js/jquery.waypoints.min.js"&gt;&lt;/script&gt;
+
 &lt;/head&gt;
 
 &lt;body&gt;
+
+    <!-- html example - code -->
+
+    &lt;h2&gt; HTML - Example One &lt;/h2&gt;
+    &lt;section class="example-animation" data-ex-animation="swing"&gt;
+       &lt;p&gt; Let's go for a swing! Weeeeee... &lt;/p&gt;
+    &lt;/section&gt;
+
 &lt;/body&gt;
 &lt;/html&gt;
+                    </code></pre>
+                    </section>
+                    <section>
+                        <h2>JQuery Waypoints - HTML Example #2</h2>
+                        <pre><code>
+&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;
+&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;
+&lt;head&gt;
+&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=UTF-8&quot; /&gt;
+&lt;title&gt;JQuery Waypoints - Plugin Example(s)&lt;/title&gt;
+<!-- place animate.css on top -->
+&lt;link rel="stylesheet" href="css/animate.css"/&gt;
+<!-- jquery needs to be above waypoints in order for waypoints to work! -->
+&lt;script src="js/jquery-1.9.1.min.js"&gt;&lt;/script&gt;
+<!-- waypoints should be placed under both animate.css and jquery -->
+&lt;script src="js/jquery.waypoints.min.js"&gt;&lt;/script&gt;
 
+&lt;/head&gt;
 
-                        </code>
-                        </pre>
+&lt;body&gt;
 
+    <!-- html example - image -->
 
+    &lt;h2&gt; HTML - Example Two &lt;/h2&gt;
+    &lt;section class="example-animation" data-ex-animation="swing"&gt;
+       &lt;a href="https://pixabay.com/en/penguin-funny-blue-water-animal-56101/"&gt;&lt;img src="images/example-image.jpg" width="400px"&gt;&lt;/a&gt;
+    &lt;/section&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+                    </code></pre>
+                    </section>
+                    <section>
+                        <h2>JQuery Waypoints - JavaScript for Plugin</h2>
+                        <pre><code>
+function onScroll(items, trigger) { /* function set for trigger items */
+    items.each(function() {
+    var exAnimation = $(this),
+    exAnimationClass = exAnimation.attr('data-ex-animation'), /* enables animation */
+    exAnimationDelay = exAnimation.attr('data-ex-animation-delay'); /* enables a delay in animation */
+
+    var exTrigger = (trigger) ? trigger : exAnimation; /* triggers animation waypoint */
+
+    exTrigger.waypoint(function() { /* function for waypoint */
+    exAnimation.addClass('animated').addClass(exAnimationClass);
+        },{
+            trigger: true,
+            offset: '960px;' /* offset for animation waypoint: set to 100px */
+        });
+    });
+}
+    onScroll( $('.example-animation') );
+                        </code></pre>
+                    </section>
                 </section>
-                -->
+
+                <section data-background-transition="slide">
+                    <h2>Plugin Example Webpage</h2>
+                    <p> This example I created will help guide you in understanding how to execute Waypoints into your own code. </p>
+                    <a href="Sharpe_Allison_WIA_Presentation_Plugin/index.html">Click here to access website</a>
+                </section>
 
 			</div>
 
@@ -238,7 +185,7 @@
 				history: true,
 				center: true,
 
-				theme: Reveal.getQueryHash().theme || 'solarized', // available themes are in /css/theme
+				theme: Reveal.getQueryHash().theme || 'beige', // available themes are in /css/theme
 				transition: Reveal.getQueryHash().transition || 'cube', // default/cube/page/concave/zoom/linear/fade/none
 
 				// Optional libraries used to extend on reveal.js
@@ -254,7 +201,7 @@
 				]
 			});
 
-		</script>
+        </script>
 
 	</body>
 </html>
