@@ -1,0 +1,85 @@
+body {
+    font-family: sans-serif;
+    background: #999999;
+}
+
+.pg-container {
+    background: #fff;
+    padding: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
+    border: 1px solid #fff;
+    border-radius: 0.5em;
+}
+
+h1 {
+    font-weight: 300;
+    float: left;
+}
+
+p {
+    font-weight: 100;
+}
+
+#logo-img {
+    position: absolute;
+    margin-top: -10px;
+    margin-left: 20px;
+}
+
+ul {
+    margin-left: 260px;
+}
+
+li {
+    float: left;
+    margin-right: 30px;
+    margin-top: 50px;
+    list-style-type: square;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+a:hover {
+    color: #888888;
+}
+
+#show-hide, #theDiv, #fadeTo {
+    width: 250px;
+    height: 180px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    padding: 20px;
+    background: blue;
+    border: 2px solid black;
+    cursor: pointer;
+    clear: left;
+}
+
+#fadeTo {
+    margin-top: 180px;
+}
+
+#fadeMe {
+    width: 50px;
+    height: 20px;
+}
+
+.back-btn {
+    margin-top: 20px;
+}
+
+footer {
+    text-align: center;
+    color: #fff;
+}
+
+
+
+
+
+
+
