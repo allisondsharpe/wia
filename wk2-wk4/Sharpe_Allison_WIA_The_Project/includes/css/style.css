@@ -1,20 +1,49 @@
 body {
     font-family: sans-serif;
-    background: #999999;
+    background: #666;
 }
 
 .pg-container {
-    background: #fff;
+    background: #454545;
     padding: 20px;
-    margin-left: 30px;
-    margin-right: 30px;
-    border: 1px solid #fff;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: -10px;
+    box-shadow: 10px 10px 5px #333;
     border-radius: 0.5em;
+    height: 600px;
+}
+
+header {
+    background: linear-gradient(#fff, #454545);
+    margin-top: -20px;
+    margin-left: -20px;
+    float: left;
+    width: 270px;
+}
+
+section {
+    color: #fff;
+}
+
+section h1 {
+    margin-left: 330px;
+    margin-top: 50px;
+    font-size: 1.7em;
+    background: #666;
+    margin-right: 200px;
+    border-radius: 0.2em;
+    padding: 10px 0px 10px 40px;
+}
+
+section p {
+    margin-left: 330px;
+    margin-top: 80px;
+    font-size: 1.1em;
 }
 
 h1 {
     font-weight: 300;
-    float: left;
 }
 
 p {
@@ -28,11 +57,11 @@ p {
 }
 
 ul {
-    margin-left: 260px;
+    margin-left: 30px;
+    margin-top: 180px;
 }
 
 li {
-    float: left;
     margin-right: 30px;
     margin-top: 50px;
     list-style-type: square;
@@ -40,36 +69,11 @@ li {
 
 a {
     text-decoration: none;
-    color: #000;
+    color: #fff;
 }
 
 a:hover {
-    color: #888888;
-}
-
-#show-hide, #theDiv, #fadeTo {
-    width: 250px;
-    height: 180px;
-    margin-top: 30px;
-    margin-bottom: 10px;
-    padding: 20px;
-    background: blue;
-    border: 2px solid black;
-    cursor: pointer;
-    clear: left;
-}
-
-#fadeTo {
-    margin-top: 180px;
-}
-
-#fadeMe {
-    width: 50px;
-    height: 20px;
-}
-
-.back-btn {
-    margin-top: 20px;
+    color: #bc5357;
 }
 
 footer {

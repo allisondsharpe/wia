@@ -1,116 +1,131 @@
 body {
     font-family: sans-serif;
-    background: #999999;
+    background: #454545;
 }
 
 .pg-container {
-    background: #fff;
+    background: linear-gradient(#454545, #fff);
     padding: 20px;
-    margin-left: 30px;
-    margin-right: 30px;
-    border: 1px solid #fff;
-    border-radius: 0.5em;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-top: -10px;
+    border: 1px solid #454545;
+    box-shadow: 10px 5px 5px #333;
+    height: 470px;
 }
 
 h1 {
+    float: left;
+    color: #fff;
     font-weight: 300;
+    font-size: 1.5em;
+    background: #666;
+    border-radius: 0.2em;
+    padding: 10px 20px 10px 20px;
+    margin-bottom: 50px;
+}
+
+a {
+    text-decoration: none;
+    color: #bc5357;
+}
+
+a:hover {
+    color: #bcbcbc;
+}
+
+.city-detail {
+    color: #fff;
+}
+
+.city-detail-container {
+    display: none;
+}
+
+.city-detail-container .city-detail {
+    width: 500px;
+    border: 1px solid #454545;
+}
+
+.map-container {
+    background-image: url(../images/delivery/map.png);
+    background-repeat: no-repeat;
+    height: 350px;
+    width: 850px;
+    position: relative;
+    color: #fff;
+    font-size: 13px;
     float: left;
 }
 
-p {
-    font-weight: 100;
-}
-
-.grey {color: #aaa;}
-
-/*  City Info   */
-.city_detail_container { display: none; }
-.city_detail_container .city_detail { width: 300px; border: 1px solid #ccc; }
-
-
-/*  Interactive Map Container */
-.map_container {
-    background-image: url(../images/template/map.jpg);
-    background-repeat: no-repeat;
-    background-position: 0px 0px;
-    height: 325px;
-    width: 760px;
-    position: relative;
-    color: #fff;
-    font-family: Arial;
-    font-size: 12px;
-    float: right;
-    margin: 0px 0px 0px 20px;
-}
-
-.map_container .clear_both { clear: both; line-height: 1px; }
-
-.map_container .city_info h2 {
+.map-container .city-info h2 {
     margin: 0px 0px 0px 0px;
     font-size: 18px;
     font-weight: bold;
 }
-.map_container .city_info h3 {
-    margin: 0px 0px 12px 0px;
-    font-size: 12px;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    color: #2c3748;
-}
-.map_container p { margin: 0px 0px 12px 0px; }
 
-.map_container a, a:visited { color: #AA0000; margin: 0px 10px 0px 0px; }
-.map_container a.dot {
-    background-image: url(../images/template/dots.png);
+.map-container a.marker {
+    background-image: url(../images/delivery/marker.png);
     background-repeat: no-repeat;
-    background-position: 0px 0px;
-    height: 20px;
-    width: 20px;
-    display: block;
+    height: 100px;
+    width: 100px;
     position: absolute;
     cursor: pointer;
 }
-.map_container a.dot.selected {
-    background-position: 0px -40px;
-}
-.map_container a.dot:hover {
-    background-position: 0px -20px;
-}
-.map_container .form_continent {
+
+.map-container .form-continent {
     position: absolute;
     top: 265px;
     left: 30px;
 }
-.map_container .detail_container {
+
+.map-container .detail-container {
     position: absolute;
     top: 35px;
     left: 480px;
     width: 240px;
     height: 260px;
 }
-.map_container .city_detail {
+
+.map-container .city-detail {
     position: absolute;
-    top: 0px;
     width: 230px;
-    padding: 10px 0px 0px 12px;
-    border-left: 1px solid #a9b5c8;
-    border-top: 1px solid #a9b5c8;
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
+    padding: 10px;
+    border-left: 1px solid #eee;
+    border-top: 1px solid #eee;
+    border-radius: 1.0em;
+    margin-left: 20px;
 }
 
-.map_container .city_detail .city_photo {
+.map-container .city-detail .city-photo {
     float: left;
     margin: 0px 15px 0px 0px;
     border: 1px solid #fff;
-    border-radius: 8px;
-    box-shadow: 0px 5px 3px #4e5d74;
-    -webkit-box-shadow: 0px 5px 3px #4e5d74;
-    -moz-box-shadow: 0px 5px 3px #4e5d74;
-    -webkit-border-radius: 8px;
+    border-radius: 1.0em;
+    box-shadow: 0px 5px 3px #454545;
 }
-.map_container .city_detail .city_info {
+
+.map-container .city-detail .city-info {
     width: 130px;
     float: left;
+}
+
+.submit {
+    margin-top: 20px;
+}
+
+.submit:hover {
+    background: #eee;
+    color: #bc5357;
+    border: 1px solid #eee;
+    border-radius: 0.5em;
+}
+
+.back-btn {
+    clear: both;
+}
+
+footer {
+    text-align: center;
+    color: #fff;
 }
